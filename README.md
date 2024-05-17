@@ -1,2 +1,2 @@
-# Synchronization techniques in OFDM
-In this project, I have implemented a synchronization technique in  OFDM using python
+# Synchronization Techniques in OFDM
+To implement synchronization in OFDM (Orthogonal Frequency Division Multiplexing), detecting the start of an OFDM frame accurately is crucial. The Schmidl and Cox algorithm is a widely used method for this purpose
