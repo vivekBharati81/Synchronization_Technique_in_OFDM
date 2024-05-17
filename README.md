@@ -6,6 +6,4 @@ The Schmidl and Cox algorithm uses a preamble that contains two identical parts,
 2) **Correlation Calculation:** The algorithm calculates a correlation metric using the received signal $r(n)$. The metric involves computing the following:
 
 
-$$ P(d) = \sum_{m=0}^{L-1} (r[d+m] * r[d+m+L]) $$
-   
-   where d is the time index, L is the length of one part of the preamble.
+$$ P(d) = \sum_{m=0}^{L-1} (r[d+m] * r[d+m+L]) $$      where d is the time index, L is the length of one part of the preamble.
