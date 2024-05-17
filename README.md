@@ -1,4 +1,4 @@
-# Synchronization Techniques in OFDM
+# Synchronization Technique in OFDM
 
 ## Overview
 
