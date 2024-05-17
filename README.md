@@ -16,7 +16,7 @@ This project implements synchronization for Orthogonal Frequency Division Multip
 
       $$R(d) = \sum_{m=0}^{L-1} \left| r(d+m+L) \right|^2$$
 
-4) **Metric Calculation:** The correlation metric $M(d)$ is then given by:
+4) **Metric Calculation:** The normalized correlation metric $M(d)$ is then given by:
 
       $$M(d) = \frac{\left| P(d) \right|^2}{\left( R(d) \right)^2}$$
 
