@@ -26,21 +26,21 @@ This project implements synchronization for Orthogonal Frequency Division Multip
 
 To implement the synchronization algorithm effectively, follow these steps:
 
-1. **Metric Calculation**: Compute the metric $M(d)$ as described above.
-2. **Plateau Detection**: Detect the plateau in the metric \( M(d) \), indicating the start of the OFDM frame.
+1. **Metric Calculation**: Compute the metric $M(d)$ as described above. This involves sliding the window over the received signal and calculating $P(d)$ and $R(d)$.
+2. **Plateau Detection**: Detect the plateau in the metric $M(d)$. The plateau corresponds to the region where the repeated parts of the preamble are aligned, indicating the start of the OFDM frame.
 3. **Peak Detection**: Identify the exact peak within the plateau for precise FFT window positioning.
-4. **FFT Window Positioning**: Position the FFT window correctly for proper demodulation of OFDM symbols.
-5. **Preamble and Payload Extraction**: Extract preamble and payload data for further processing.
+4. **FFT Window Positioning**: Once the start of the OFDM frame is identified, position the FFT window correctly to ensure proper demodulation of the OFDM symbols.
+5. **Preamble and Payload Extraction**: After synchronization, extract the preamble and payload data. The preamble is used for further channel estimation and correction, while the payload contains the actual data to be decoded.
 
 ## Additional Logic for Robust Synchronization
 
 Consider the following additional logic for robust synchronization:
 
-- **Thresholding**: Use adaptive thresholding to improve plateau detection.
-- **Window Averaging**: Smooth out the metric \( M(d) \) to reduce noise impact.
-- **Guard Interval Consideration**: Account for guard interval to avoid inter-symbol interference.
-- **Fine Synchronization**: Use pilot symbols for fine synchronization.
-
+- **Thresholding**:  Use adaptive thresholding to improve the detection of the plateau. This helps in distinguishing the plateau from noise.
+- **Window Averaging**: Apply window averaging to smooth out the metric $M(d)$ and reduce the impact of noise.
+- **Guard Interval Consideration**: Account for the guard interval (cyclic prefix) in OFDM systems to avoid inter-symbol interference (ISI).
+- **Fine Synchronization**: Perform fine synchronization using pilot symbols or additional synchronization sequences embedded within the OFDM frame.
+  
 ## Summary
 
-The Schmidl and Cox algorithm is foundational for OFDM synchronization. By calculating a correlation metric and applying additional logic for plateau detection and FFT window positioning, accurate synchronization is achieved, facilitating effective OFDM demodulation and decoding.
+By calculating a correlation metric and applying additional logic for plateau detection and FFT window positioning, accurate synchronization is achieved, facilitating effective OFDM demodulation and decoding.
