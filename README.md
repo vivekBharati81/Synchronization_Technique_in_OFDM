@@ -10,17 +10,17 @@ This project implements synchronization for Orthogonal Frequency Division Multip
 
       The preamble consists of two identical parts, facilitating the detection of the start of the frame.
 
-### Correlation Calculation
+2) **Correlation Calculation**
 
-The algorithm calculates a correlation metric using the received signal $r(n)$. The metric involves computing the following:
+      The algorithm calculates a correlation metric using the received signal $r(n)$. The metric involves computing the following:
 
-$$P(d) = \sum_{m=0}^{L-1} r^*(d+m) \cdot r(d+m+L)$$
+      $$P(d) = \sum_{m=0}^{L-1} r^*(d+m) \cdot r(d+m+L)$$
 
-### Energy Calculation
+3) **Energy Calculation**
 
-The energy of the received signal over the interval is calculated as:
+      The energy of the received signal over the interval is calculated as:
 
-\[ R(d) = \sum_{m=0}^{L-1} \left| r(d+m+L) \right|^2 \]
+      $$R(d) = \sum_{m=0}^{L-1} \left| r(d+m+L) \right|^2$$
 
 ### Metric Calculation
 
