@@ -7,7 +7,8 @@ This project implements synchronization for Orthogonal Frequency Division Multip
 ## Schmidl and Cox Algorithm
 
 1) **Preamble Structure:**
-   The preamble consists of two identical parts, facilitating the detection of the start of the frame.
+
+      The preamble consists of two identical parts, facilitating the detection of the start of the frame.
 
 ### Correlation Calculation
 
