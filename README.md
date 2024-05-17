@@ -8,4 +8,5 @@ The Schmidl and Cox algorithm uses a preamble that contains two identical parts,
 $$ P(d) = \sum_{m=0}^{L-1} (r[d+m] * r[d+m+L]) $$
       
 
+   
    where d is the time index, L is the length of one part of the preamble.
