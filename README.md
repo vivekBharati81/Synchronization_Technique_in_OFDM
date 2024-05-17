@@ -26,7 +26,7 @@ This project implements synchronization for Orthogonal Frequency Division Multip
 
 To implement the synchronization algorithm effectively, follow these steps:
 
-1. **Metric Calculation**: Compute the metric \( M(d) \) as described above.
+1. **Metric Calculation**: Compute the metric $M(d)$ as described above.
 2. **Plateau Detection**: Detect the plateau in the metric \( M(d) \), indicating the start of the OFDM frame.
 3. **Peak Detection**: Identify the exact peak within the plateau for precise FFT window positioning.
 4. **FFT Window Positioning**: Position the FFT window correctly for proper demodulation of OFDM symbols.
