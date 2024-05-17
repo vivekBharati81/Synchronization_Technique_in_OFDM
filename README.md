@@ -12,17 +12,15 @@ This project implements synchronization for Orthogonal Frequency Division Multip
 
       $$P(d) = \sum_{m=0}^{L-1} r^*(d+m) \cdot r(d+m+L)$$
 
-3) **Energy Calculation** The energy of the received signal over the interval is calculated as:
+3) **Energy Calculation:** The energy of the received signal over the interval is calculated as:
 
       $$R(d) = \sum_{m=0}^{L-1} \left| r(d+m+L) \right|^2$$
 
-### Metric Calculation
+4) **Metric Calculation:** The correlation metric $M(d)$ is then given by:
 
-The correlation metric \( M(d) \) is then given by:
+      $$M(d) = \frac{\left| P(d) \right|^2}{\left( R(d) \right)^2}$$
 
-\[ M(d) = \frac{\left| P(d) \right|^2}{\left( R(d) \right)^2} \]
-
-This metric exhibits a plateau around the position of the preamble.
+      This metric exhibits a plateau around the position of the preamble.
 
 ## Implementation Steps
 
