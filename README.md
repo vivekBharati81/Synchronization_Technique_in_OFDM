@@ -10,7 +10,7 @@ This project implements synchronization for Orthogonal Frequency Division Multip
 
 2) **Correlation Calculation:** The algorithm calculates a correlation metric using the received signal $r(n)$. The metric involves computing the following:
 
-      $$P(d) = \sum_{m=0}^{L-1} r^*(d+m) \cdot r(d+m+L)$$
+      $$P(d) = \sum_{m=0}^{L-1} r(d+m) \cdot r(d+m+L)$$
 
 3) **Energy Calculation:** The energy of the received signal over the interval is calculated as:
 
