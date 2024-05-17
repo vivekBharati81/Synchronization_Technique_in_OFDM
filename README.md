@@ -12,9 +12,9 @@ The preamble consists of two identical parts, facilitating the detection of the 
 
 ### Correlation Calculation
 
-The algorithm calculates a correlation metric using the received signal \( r(n) \). The metric involves computing the following:
+The algorithm calculates a correlation metric using the received signal $r(n)$. The metric involves computing the following:
 
-\[ P(d) = \sum_{m=0}^{L-1} r^*(d+m) \cdot r(d+m+L) \]
+$$P(d) = \sum_{m=0}^{L-1} r^*(d+m) \cdot r(d+m+L)$$
 
 ### Energy Calculation
 
