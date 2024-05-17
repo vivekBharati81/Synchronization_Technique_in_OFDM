@@ -1,4 +1,4 @@
-# Schmidl and Cox Algorithm for OFDM Synchronization
+# Synchronization Techniques in OFDM
 
 ## Overview
 
