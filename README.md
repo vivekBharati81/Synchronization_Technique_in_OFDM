@@ -2,11 +2,11 @@
 
 ## Overview
 
-The Schmidl and Cox algorithm is a widely used method for accurately detecting the start of an OFDM frame. This README outlines the process and implementation steps involved in the algorithm.
+This project implements synchronization for Orthogonal Frequency Division Multiplexing (OFDM) using the Schmidl and Cox algorithm. To implement synchronization in OFDM, detecting the start of an OFDM frame accurately is crucial. The Schmidl and Cox algorithm is a widely used method for this purpose.
 
-## Algorithm Description
+## Schmidl and Cox Algorithm
 
-### Preamble Structure
+1) **Preamble Structure:**
 
 The preamble consists of two identical parts, facilitating the detection of the start of the frame.
 
